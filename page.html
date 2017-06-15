@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашка</title>
+	<link href="style.css" type="text/css" rel="stylesheet"></head>
+<body>
+	<div id="hd">
+		<ul class="menu">
+			<li>
+				<a href="#" class="mn">Home</a>
+			</li>
+			<li>
+				<a href="#" class="mn">About</a>
+				<ul class="menu2">
+					<li>
+						<a href="#" class="mn">Creating</a>
+					</li>
+					<li>
+						<a href="#" class="mn">Design</a>
+					</li>
+					<li>
+						<a href="#" class="mn">Slider</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="mn">Portfolio</a>
+			</li>
+			<li>
+				<a href="#" class="mn">Blog</a>
+			</li>
+			<li>
+				<a href="#" class="mn">Contacts</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="form">
+		<form action="index.html" method="get" target="_blank">
+			<fieldset>
+				<legend>Форма</legend>
+				<label for="nm">Ваше имя</label>
+				<input type="text" id="nm" name="login" value="" placeholder="Введите логин" size="19" maxlength="7">
+				<label for="ps">Пароль</label>
+				<input type="password" id="ps" name="password" value="" placeholder="Введите пароль" size="20">
+				<br>
+				<p>Вы мужчина или женщина?</p>
+				М <input type="radio" name="пол" value="мужчина" checked>
+				Ж <input type="radio" name="пол" value="женщина">
+				<p>
+					<textarea name="textarea" id="" cols="64" rows="5" disabled title="Вводите текст">Пожелания вводите сюда</textarea>
+				</p>
+				<p>Выберите самые красивые цветы:</p>
+				Роза
+				<input type="checkbox" name="р" value="роза" checked>
+				Тюльпан
+				<input type="checkbox" name="т" value="тюльпан">
+				Пионы
+				<input type="checkbox" name="п" value="пионы">
+				Другие
+				<input type="checkbox" name="п" value="пионы">
+				<br>
+				<input type="hidden" name="type" value="mmm">
+				<p>Куда вы едете отдыхать этим летом?</p>
+				<select name="select" multiple>
+					<optgroup label="Европа" value="Европа">
+						<option value="Португалия">Португалия</option>
+						<option value="Кипр" selected>Кипр</option>
+					</optgroup>
+					<optgroup label="Африка">
+						<option value="Египет">Египет</option>
+						<option value="Тунис">Тунис</option>
+					</optgroup>
+					<optgroup label="Азия">
+						<option value="Индия">Индия</option>
+						<option value="Индия">Тайланд</option>
+					</optgroup>
+				</select>
+				<p>
+					<input type="file" name="file" value="choose"></p>
+				<p>
+					<input type="submit" value="send">
+					<input type="reset" name="reset" value="reset">
+					<input type="button" name="button" value="не жми сюда!" onclick="alert('ну зачем ты ето сделал?')"></p>
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="float0">
+		<div class="float1">
+			<p>
+				<img src="morda.jpg" alt="image" width="150px" class="mr"></p>
+			<p>
+				Lorem ipsum
+				<span>dolor</span>
+				sit amet, consectetur adipisicing elit. Iste aspernatur asperiores reiciendis vero, totam quibusdam delectus ipsa unde esse omnis praesentium ea velit culpa. Praesentium fugit iste facere vel vitae?
+			</p>
+		</div>
+		<div class="float1">
+			<p>
+				<img src="morda.jpg" alt="image" width="150px" class="mrd"></p>
+			<p>
+				Lorem ipsum
+				<span>dolor</span>
+				sit amet, consectetur adipisicing elit. Iste aspernatur asperiores reiciendis vero, totam quibusdam delectus ipsa unde esse omnis praesentium ea velit culpa. Praesentium fugit iste facere vel vitae?
+			</p>
+		</div>
+		<div class="float1">
+			<p>
+				<img src="morda.jpg" alt="image" width="150px" class="mrda"></p>
+			<p>
+				Lorem ipsum
+				<span>dolor</span>
+				sit amet, consectetur adipisicing elit. Iste aspernatur asperiores reiciendis vero, totam quibusdam delectus ipsa unde esse omnis praesentium ea velit culpa. Praesentium fugit iste facere vel vitae?
+			</p>
+		</div>
+		<div class="clr"></div>
+	</div>
+
+</body>
+</html>
