@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style>
+	 div {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+            border: 1px solid black;
+            width:100%;
+        }
+
+        p{
+            padding:20px;
+        }
+
+        #p1 {
+            -moz-flex: 6;
+            -webkit-flex: 6;
+            flex: 6;
+            border: 1px solid red;
+        }
+
+        #p2 {
+            -moz-flex: 3;
+            -webkit-flex: 3;
+            flex: 3;
+            border: 1px solid blue;
+        }
+        </style>
+</head>
+<body>
+	<div>
+        <p id="p1">Left Column</p>
+        <p id="p2">Right Column</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>align-items</title>
+	<style>
+	#grid {
+            height: 600px;
+            border: 1px solid black;
+            width: 300px;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        div {
+            width: 50px;
+            height: 25px;
+            -moz-align-items: flex-end;
+            -webkit-align-items: flex-end;
+            align-items: flex-end;
+            /*Также align-items принимает значения stretch, flex-star, center, baseline  */
+        }
+        </style>
+</head>
+<body>
+	<div id="grid">
+        <div style="background-color: #00ff90;">
+        </div>
+        <div style="background-color: #0094ff">
+        </div>
+        <div style="background-color: #b200ff">
+        </div>
+        <div style="background-color: #ffd800">
+        </div>
+
+    </div>
+</body>
+</html>

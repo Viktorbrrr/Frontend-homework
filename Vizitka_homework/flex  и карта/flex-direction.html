@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex-direction</title>
+	<style>
+	.grid {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            /*Также к flex-direction применяется значения: row, row-reverse, column  */
+            width: 400px;
+            height: 250px; 
+        }
+
+        .block {
+            width:400px;
+            background: #0094ff;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        </style>
+</head>
+<body>
+	<div class="grid">
+        <div class="block">Block 1</div>
+        <div class="block">Block 2</div>
+        <div class="block">Block 3</div>
+        <div class="block">Block 4</div> 
+         </div>
+</body>
+</html>
