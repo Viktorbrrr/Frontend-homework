@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>2.2</title>
+	<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%; 
+    align-items: center;  
+}
+.flex-item {
+    width: 100%;
+    margin:80px;
+}
+</style>
+</head>
+<body>
+<div class="flex-container">
+	<div class="flex-item">
+			<script>
+	            for(var i =0;i<4;i++){
+                	switch(i){
+                    	case 0:document.write('************<br/>');break;
+                    	case 1:document.write('************<br/>');break;
+                    	case 2:document.write('************<br/>');break;
+                    	case 3:document.write('************<br/>');break;
+                	}
+             	}
+            </script>
+	</div>
+
+	<div class="flex-item">
+			<script>
+                for(var i =0;i<6;i++){
+                	switch(i){
+                    	case 0:document.write('&nbsp&nbsp&nbsp&nbsp&nbsp*<br/>');break;
+                    	case 1:document.write('&nbsp&nbsp&nbsp&nbsp**<br/>');break;
+                    	case 2:document.write('&nbsp&nbsp&nbsp***<br/>');break;
+                    	case 3:document.write('&nbsp&nbsp****<br/>');break;
+                    	case 4:document.write('&nbsp*****<br/>');break;
+                    	case 5:document.write('******<br/>');break;
+                	}
+        		}
+			</script>
+	</div>
+		
+	<div class="flex-item">
+			<script>
+                for(var i =0;i<7;i++){
+                		for(var j=0;j<i;j++){
+                    	document.write('*');
+                	}
+                	document.write("<br>");
+            	}
+			</script>
+	</div>
+
+	<div class="flex-item">
+			<script>
+                for(var i =0;i<7;i++){
+                 	switch(i){
+                    	case 0:document.write('&nbsp&nbsp&nbsp*<br/>');break;
+                    	case 1:document.write('&nbsp&nbsp**<br/>');break;
+                    	case 2:document.write('&nbsp***<br/>');break;
+                    	case 3:document.write('****<br/>');break;
+                    	case 4:document.write('&nbsp***<br/>');break;
+                    	case 5:document.write('&nbsp&nbsp**<br/>');break;
+                    	case 6:document.write('&nbsp&nbsp&nbsp*<br/>');break;
+                	}
+       			 }
+			</script>
+	</div>
+</div>
+</body>
+</html>

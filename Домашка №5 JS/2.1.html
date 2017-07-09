@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>2.1</title>
+</head>
+<body>
+	
+<script>
+		 var mag = prompt("Введите количество магазинов","сюда");
+		 var factorial = 2;	
+		 do{
+		 	if (mag==0) {
+		 			factorial= 0;
+		 	        break;
+		 	}
+		 		factorial *= mag;
+		 		mag = --mag;
+		    }
+		 while(mag>0);
+         document.write("возможных вариантов доставки "+ factorial);
+</script>
+
+</body>
+</html>

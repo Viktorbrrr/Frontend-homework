@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>1.1.html</title>
+</head>
+<body>
+	<script> 
+		var x =6;
+		var y =15;
+		var z =4;
+		 x += y - x++ * z ;  //var x = (6+15)-(-6*4) 
+		document.write(x+'<br>');
+		</script>
+
+	<script>
+		var x =6;
+		var y =15;
+		var z =4;
+		z = -- x - y * 5 ;   //var z = 5-(-15*5)
+		document.write(z+'<br>');
+		</script>
+
+	<script>
+		var x =6;
+		var y =15;
+		var z =4;
+		y /= x + 5 % z ;   //var y = (15/6) + (5%4)
+		document.write(y+'<br>');
+		</script>
+
+	<script>
+		var x =6;
+		var y =15;
+		var z =4;
+		z = x++ + y * 5 ;   //var z = 6 + (15*5)
+		document.write(z+'<br>');
+		</script>
+
+	<script>
+		var x =6;
+		var y =15;
+		var z =4;
+		x = y - x++ * z ;   //var x = 15 - (-6*4)
+		document.write(x);
+    </script>
+
+</body>
+</html>
