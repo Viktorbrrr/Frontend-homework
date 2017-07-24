@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>3</title>
+</head>
+<body>
+
+	<script>
+		function action(i){
+			if (i>=0) {
+				document.write ("число додатнє<br>");
+			}else{
+				document.write ("число відємне<br>");
+			}
+
+				if (i%2!=0||i==2) {
+					document.write("число просте<br>");
+				} 
+				else{
+					document.write("непросте число<br>");
+				}
+
+					if (i%2==0) {
+						return "число ділиться без остачі";
+					}else if(i%5==0){
+						return "число ділиться без остачі";
+					}else if(i%3==0){
+						return "число ділиться без остачі";
+					}else if(i%6==0){
+						return "число ділиться без остачі";
+					}else if(i%9==0){
+						return "число ділиться без остачі";
+					}else{
+						return "число не ділиться без остачі";
+					}
+				
+		}
+
+						document.write(action(3541));
+
+	</script>
+		
+	
+</body>
+</html>
