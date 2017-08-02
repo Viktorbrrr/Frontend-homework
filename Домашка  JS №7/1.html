@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+<!--Створити масив розмірністю N елементів, заповнити його довільними цілими значеннями.
+ Вивести найбільше значення масиву, найменше значення масиву, загальну суму елементів,
+  середнє арифметичне усіх елементів, вивести всі непарні значення.-->
+
+<script>
+    var array = [1,9,2,3,4,5,6,8,7];
+        var max = getMaxValue(array);
+            document.write(max);
+        var min = getMinValue(array);
+            document.write(min);
+        var sum = sumForItems(array);
+            document.write(sum);
+        var ave = average(array);
+            document.write(ave);
+        var unpaired = unpVal(array);
+            document.write(unpaired);
+
+
+//Максимальное число
+
+    function getMaxValue(array){
+        var max = array[0];
+        for (var i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+        return max+'</br>';
+    }
+
+//Минимальное число
+
+    function getMinValue (array){
+        var min= array[0];
+        for (var i = 0; i < array.length; i++) {
+            if (min > array[i]){
+            min = array[i];
+            }
+        }
+        return min+'</br>';
+    }
+
+//Сумма чисел из массива
+
+    function sumForItems(array) {
+        var sum=0;
+        for (var i=0;i<array.length;i++){
+            sum+=array[i];
+        }
+        return sum+'</br>';
+    }
+
+//Среднее арифметическое всех елементов
+
+    function average(array) {
+        var ave=0;
+        for (var i=0;i<array.length;i++){
+            ave+=array[i];
+            ave/=array.length;
+        }
+        return ave+'</br>';
+    }
+
+// Непарные значения
+
+    function unpVal(array) {
+        var unpaired=0;
+        for (var i=0;i<array.length;i++){
+            if (array[i]%2!==0){
+                /*document.write(array[i]);  эту строку выводит четко, а когда присваиваю массив в переменную
+                var unpaired и возвращаю ее через return то выводит на екран не коректные числа. Почему,подскажите?*/
+                unpaired+=array[i];
+            }
+        }
+        return unpaired;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+        <!--Створити двомірний масив елементів розміром 5х5 і заповнити його довільними цілочисельними значеннями.
+         По головній діагоналі всі числа зі знаком (-) замінити на 0, а числа зі знаком (+) на число -->
+
+
+    <script>
+        var block = new Array(5) ;
+            for (var i=0;i< block.length; i++){
+            block[i]= new Array(5);
+            }
+
+            function rand(value) {
+                for (var row = 0; row < block.length; row++) {
+                    for (var col = 0; col < block[row].length; col++) {
+                        if ((row + col) % 2 === 1)
+                            block[row][col] = Math.round(Math.random() * 5 + (-2));
+                        else  block[row][col] = Math.round(Math.random() * 5 + (-2));
+                    }
+                }
+            }
+
+            rand(block);
+
+            function diagonal(value) {
+
+
+                        if (block[0][0] < 0)
+                            block[0][0] = "zero";
+                        else
+                            block[0][0] = "number";
+
+
+                        if (block[1][1] < 0)
+                            block[1][1] = "zero";
+                        else
+                            block[1][1] = "number";
+
+
+                        if (block[2][2] < 0)
+                            block[2][2] = "zero";
+                        else
+                            block[2][2] = "number";
+
+
+                        if (block[3][3] < 0)
+                            block[3][3] = "zero";
+                        else
+                            block[3][3] = "number";
+
+
+                        if (block[4][4] < 0)
+                            block[4][4] = "zero";
+                        else
+                            block[4][4] = "number";
+                    }
+
+            diagonal(block);
+
+            function view(value) {
+
+
+        for (var row = 0; row < block.length; row++) {
+            for (var col = 0; col < block[row].length; col++) {
+                document.write(block[row][col]);
+            }
+            document.write('<br>');
+        }
+    }
+
+            view(block);
+    </script>
+
+
+
+
+</body>
+</html>

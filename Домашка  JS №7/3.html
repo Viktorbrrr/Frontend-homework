@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+<!--Створити об’єкт «FE Developer» за допомогою блока ініціалізації, задати властивості імені, прізвище, віку тощо.
+
+Створити об’єкт «BE Developer» за допомогою конструктора, задати властивості імені, прізвище, віку тощо.-->
+<script>
+
+
+// объект через блок инициализации
+   var fe_developer = {
+       name:"Viktor",
+       surname:"Danylchuk",
+       age:"27",
+       growth:"1.85m",
+       weight:"79",
+
+       studying:function () {
+           document.write("<p>"+fe_developer.name+"<p>"+fe_developer.surname);
+       }
+   };
+
+        fe_developer.studying();
+
+
+// объект через конструктор
+
+    var be_developer = new Object(
+         be_developer.name="Viktor",
+         be_developer.surname="Danylchuk",
+         be_developer.age="27",
+         be_developer.growth="1.85m",
+         be_developer.weight="79",
+
+         be_developer.studying=function () {
+
+            });
+</script>
+
+
+
+
+
+</body>
+</html>
