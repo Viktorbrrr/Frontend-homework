@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+</head>
+<body>
+
+<script>
+    // Я добавил через прототип,потому что добавление в конструктор уже делал во втором задании.
+        function Human(q,w,e,r) {
+            this.growth= q;
+            this.weight= w;
+            this.age= e;
+            this.gender= r;
+        }
+             Human.prototype.name="Alexis";
+        var alex= new Human(185,80,18,"man");
+        document.write(alex.name+"</br>");
+        var desired= new Human(160);
+        Human.prototype.desired_weight_for_growth= function () {
+            return (this.growth-100)*1.15;
+        };
+            document.write(desired.desired_weight_for_growth());
+</script>
+
+
+
+</body>
+</html>

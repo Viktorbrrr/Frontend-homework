@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+
+<script>
+
+    function Samanta(h,s) {
+
+        this.height=h;
+        this.width=s;
+        this.state=function () {
+            document.write("state:</br>"+ this.height+" сантиметров"+"</br>"+this.width+" килограм"+"</br>");
+        }
+    }
+    var sam = new Samanta(170,58);
+    sam.state();
+
+    Samanta.its_growth= 180;
+    Samanta.her_Weight = function () {
+        return new Samanta(165,49);
+    };
+
+   document.write(Samanta.its_growth+"</br>");
+
+    Samanta.her_Weight().state();
+
+
+</script>
+
+
+
+</body>
+</html>

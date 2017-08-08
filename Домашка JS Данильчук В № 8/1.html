@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+
+    <script>
+
+        function Box(x,y,w,z) {
+
+            this.height = x;
+            this.width = y;
+            this.depth = w;
+            this.material = z;
+            this.volume = function (){
+                document.write(this.height*this.width*this.depth);
+            };
+        }
+
+            Box.prototype.equals= function (obj) {
+                if (this.material===obj.material) {
+                    return true;
+                } else{
+                    return false;
+                }
+            };
+                var box2 = new Box(100,50,20,'plastik');
+                var box3 = new Box(5,7,5,'rubber');
+
+                var res= box2.equals(box3);
+                document.write(res+"</br>");
+                box3.volume();
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+
+<script>
+            function Population(x,y) {
+
+                this.first_name =x;
+                this.age= y;
+            }
+                var human0 = new Population("Jose",17);
+                var human1 = new Population("Enrike",35);
+                var human2 = new Population("Juan",23);
+                var human3 = new Population("Pedro",19);
+                var human4 = new Population("Fernando",46);
+
+
+                var human= new Array(human0.age,human1.age,human2.age,human3.age,human4.age);
+
+
+                document.write(human.sort()+"<br>");//по возрастанию
+                document.write(human.reverse());    //по убыванию
+
+</script>
+
+</body>
+</html>
