@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+</head>
+<body>
+	
+	<script>
+		
+			var animal = {
+                jumps: null
+			};
+
+			var rabbit = {
+				jumps: true
+			};
+
+ 				rabbit.__proto__ = animal;
+				alert( rabbit.jumps ); // ? (1)  true
+ 				delete rabbit.jumps;
+ 				alert( rabbit.jumps ); // ? (2)  null
+ 				delete animal.jumps;
+ 				alert( rabbit.jumps ); // ? (3)  undefined
+
+///////////////////////////////////////////////////////////////////
+ 
+		
+		Сработает ли вызов rabbit.eat() ?
+		Если да, то в какой именно объект он запишет свойство full: в rabbit или animal?
+
+ 
+
+		var animal = {
+		eat: function() {
+			this.full = true;
+			}
+		};
+
+ 		var rabbit = {
+			__proto__: animal
+		};
+
+ 		rabbit.eat();  //Да сработает, this будет указывать на rabbit
+
+////////////////////////////////////////////////////////////////////// 		
+
+		Есть объекты:
+
+ 			var head = {
+				glasses: 1
+			};
+
+			var table = {
+				pen: 3
+			};
+			table.__proto__=head;
+
+ 			var bed = {
+				sheet: 1,
+				pillow: 2
+			};
+			bed.__proto__=table;
+
+ 			var pockets = {
+				money: 2000
+			};
+			pockets.__proto__=bed;//  будет затрачено одинаковое время на поиск glasses
+
+////////////////////////////////////////////////////////////////////////
+
+		Найдите ошибку в наследовании. К чему она приведёт?
+
+ 		function Animal(name) {
+			this.name = name;
+		}
+
+ 		Animal.prototype.walk = function() {
+			alert( "ходит " + this.name );
+		};
+
+ 		function Rabbit(name) {
+			this.name = name;
+		}
+		Rabbit.prototype = Animal.prototype;
+
+		Rabbit.prototype.walk = function() {
+			alert( "прыгает! и ходит: " + this.name );  //Ошибка в 85 строке, приведт к тому что 2 ссылки указывают один обьект...
+		};
+
+////////////////////////////////////////////////////////////////////////////
+
+		В коде ниже создаётся простейшая иерархия классов: Animal -> Rabbit.
+		Что содержит свойство rabbit.constructor? Распознает ли проверка в alert объект как Rabbit?
+
+ 		function Animal() {}
+
+ 		function Rabbit() {}
+			Rabbit.prototype = Object.create(Animal.prototype);
+
+ 		var rabbit = new Rabbit();
+
+ 		alert( rabbit.constructor == Rabbit ); // Выведет false
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
